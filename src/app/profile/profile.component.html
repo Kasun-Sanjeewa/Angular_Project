@@ -1,0 +1,9 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4 text-center" style="max-width: 400px; width: 100%;">
+        <img [src]="user.profileImage" alt="Profile Image" class="rounded-circle img-thumbnail mb-3" width="120">
+        <h2 class="text-primary">{{ user.name }}</h2>
+        <p class="text-muted">{{ user.email }}</p>
+        <p>{{ user.bio }}</p>
+        <button class="btn btn-primary mt-3 w-100" (click)="editProfile()">Edit Profile</button>
+    </div>
+</div>
